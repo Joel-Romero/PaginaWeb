@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-L5e6oyxgAwA/6oG7WHU5OjAA0WXNw3gzf2e8GvFv3QnU0u4Q4b/KLr4bmrPyxyke"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Productos.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="juegos.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Consolas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Formulario.html">Formulario</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="producto">
+                        <img src="imagenes/play 5.jpg" alt="Ps5">
+                        <button id="Ps5" onclick="agregarProducto('1','Ps5', 599.99)">Ps5 - $599.99</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="producto">
+                        <img src="imagenes/play4.webp" alt="Ps4">
+                        <button id="Ps4" onclick="agregarProducto('2','Ps4', 399.99)">Ps4 - $399.99</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="producto">
+                        <img src="imagenes/PSVR2.webp" alt="PSVR2">
+                        <button id="PSVR2" onclick="agregarProducto('3','PSVR2', 299.99)">PSVR2 - $299.99</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <table class="table" id="tabla">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">TOTAL</th>
+                        <td id="total">0.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 PlayStation. Todos los derechos reservados. @Joel Romero. Teléfono: 0928452357</p>
+        </div>
+    </footer>
+
+    <script src="js/Productos.js"></script>
+</body>
+
+</html>

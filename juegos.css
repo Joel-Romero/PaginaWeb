@@ -12,14 +12,14 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 20px; 
+    padding: 12px 20px;
 }
 
 .nav-links {
@@ -55,26 +55,12 @@ header {
 }
 
 .game-card {
-    position: relative; /* Establece posición relativa para los elementos */
-}
-
-.tooltip {
-    visibility: hidden; /* Oculta el tooltip por defecto */
-    width: 250px; /* Ancho del tooltip */
-    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo semi-transparente */
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    position: absolute; /* Posiciona el tooltip de forma absoluta */
-    z-index: 1; /* Asegura que el tooltip esté sobre otros elementos */
-    bottom: 100%; /* Coloca el tooltip encima de la imagen */
-    left: 50%; /* Centra horizontalmente */
-    transform: translateX(-50%); /* Centra horizontalmente */
-}
-
-.game-card:hover .tooltip {
-    visibility: visible; /* Muestra el tooltip al pasar el ratón sobre .game-card */
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    text-align: center; 
 }
 
 .game-card:hover {
